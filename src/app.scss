@@ -1,12 +1,13 @@
 // variabili da applicare come delle utility class
 $font-color: yellow;
 $font-style:bold;
+$border:1px solid black;
 
 .container{
   width: 1200px;
   height: 200px;
   background-color: grey;
-  border: 1px solid black;
+  border: $border;
 
  .title{
    color:$font-color;
@@ -19,4 +20,28 @@ $font-style:bold;
 }
 .title-h3{
   color: $font-color;
+}
+
+.container-two{
+  width: 1200px;
+  height: 200px;
+  border:$border;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &-right{
+    border:1px solid red;
+    float: left;
+    width: 50%;
+  }
+
+  &-left{
+    border:1px solid red;
+    float:left;
+    width: 50%;
+  }
+
+
+
 }
