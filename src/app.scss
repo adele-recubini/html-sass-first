@@ -1,0 +1,22 @@
+// variabili da applicare come delle utility class
+$font-color: yellow;
+$font-style:bold;
+
+.container{
+  width: 1200px;
+  height: 200px;
+  background-color: grey;
+  border: 1px solid black;
+
+ .title{
+   color:$font-color;
+ }
+ p{
+   color:red;
+   font-style: $font-style;
+ }
+
+}
+.title-h3{
+  color: $font-color;
+}
